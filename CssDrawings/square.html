@@ -1,0 +1,164 @@
+<html>
+<header>
+  <title>CSS Drawings</title>
+  <style>
+    #square{
+      width:100px;
+      height:100px;
+      background:red;
+    }
+
+    #rectangle{
+      width: 200px;
+    	height: 100px;
+    	background: red;
+    }
+
+    #circle{
+      width:100px;
+      height:100px;
+      background: red;
+      -moz-border-radius:50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+    }
+
+    #oval {
+    	width: 200px;
+    	height: 100px;
+    	background: red;
+    	-moz-border-radius: 100px / 50px;
+    	-webkit-border-radius: 100px / 50px;
+    	border-radius: 100px / 50px;
+    }
+
+    #triangle-up {
+    	width: 0;
+    	height: 0;
+    	border-left: 50px solid transparent;
+    	border-right: 50px solid transparent;
+    	border-bottom: 100px solid red;
+    }
+
+    #triangle-down {
+  	width: 0;
+  	height: 0;
+  	border-left: 50px solid transparent;
+  	border-right: 50px solid transparent;
+  	border-top: 100px solid red;
+  }
+
+  #triangle-left {
+  	width: 0;
+  	height: 0;
+  	border-top: 50px solid transparent;
+  	border-right: 100px solid red;
+  	border-bottom: 50px solid transparent;
+  }
+
+  #triangle-right {
+  	width: 0;
+  	height: 0;
+  	border-top: 50px solid transparent;
+  	border-left: 100px solid red;
+  	border-bottom: 50px solid transparent;
+  }
+
+  #triangle-topleft {
+  	width: 0;
+  	height: 0;
+  	border-top: 100px solid red;
+  	border-right: 100px solid transparent;
+  }
+
+  #triangle-topright {
+  	width: 0;
+  	height: 0;
+  	border-top: 100px solid red;
+  	border-left: 100px solid transparent;
+
+  }
+
+  #triangle-bottomleft {
+  	width: 0;
+  	height: 0;
+  	border-bottom: 100px solid red;
+  	border-right: 100px solid transparent;
+  }
+
+  #triangle-bottomright {
+  	width: 0;
+  	height: 0;
+  	border-bottom: 100px solid red;
+  	border-left: 100px solid transparent;
+  }
+
+
+  #burger {
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3{
+    width:35px;
+    height:5px;
+    background-color:black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+
+  </style>
+</header>
+<body>
+
+<div id="square"></div>
+<br/>
+<div id="rectangle"></div>
+<br/>
+<div id="circle"></div>
+<br/>
+<div id="oval"></div>
+<br/>
+<div id="triangle-up"></div>
+<br/>
+<div id="triangle-down"></div>
+<br/>
+<div id="triangle-left"></div>
+<br/>
+<div id="triangle-right"></div>
+<br/>
+<div id="triangle-topleft"></div>
+<br/>
+<div id="triangle-bottomleft"></div>
+<br/>
+<div id="triangle-topleft"></div>
+<br/>
+<div id="triangle-bottomright"></div>
+<br/>
+
+<div id="burger" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+
+</body>
+</html>
