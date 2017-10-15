@@ -1,36 +1,106 @@
 <html>
 <head>
-  <title>My Portofolio</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Custom css -->
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+
 </head>
 <body>
 
-
-  <div id="intro">
-    <p><b>Full Stack Developer, creating responsive Web Applications and E-Commerce Website.
-    Review my work to find out who I am as a developer.</b></p>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">LOGISTIC MIND</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">ABOUT ME</a></li>
+      <li><a href="#">WORK</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
   </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div id="left_arrow" class="col-lg-1" style="background-color:yellow;">
+      <img src="images/left.png">
+    </div>
+    <div class="col-lg-10" style="background-color:blue;">
+      <div class="span4">
+        <h2>Our Products</h2>
+        <p>Oh…yeah…the guy in the…the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Speaking of settling, how's Ann? He's a regular Freddie Wilson, that one.</p>
+        <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+      </div>
 
-  <div id="face">
-    <img src="images/face.png" alt="Smiley face" width="100px;">
-  </div>
+      <div class="span4">
+        <h2>We Love You! <small>so much</small></h2>
+        <p>I mean, it's one banana, Michael. What could it cost, ten dollars? It's sort of like going from prime rib to… I don't know… weird brother of prime rib. I hear the jury's still out on science. <strong>Check out banner, Michael!</strong></p>
+        <p class="text-center"><a class="btn btn-primary" href="index.html">Primary button</a></p>
+      </div>
 
-  <div id="burger_menu" onclick="myFunction(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
+      <div class="span4">
+        <h2>Headline Here</h2>
+        <p>Obviously this blue part here is the land. Let the great experiment begin! But I'm the oldest. The matriarch if you will. She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. Maybe we should call her?</p>
+        <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+      </div>
+      <div class="span4">
+        <h2>Our Products</h2>
+        <p>Oh…yeah…the guy in the…the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Speaking of settling, how's Ann? He's a regular Freddie Wilson, that one.</p>
+        <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+      </div>
 
-
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Porotofoio</a>
-      <a href="#">Contact</a>
+      <div class="span4">
+        <h2>We Love You! <small>so much</small></h2>
+        <p>I mean, it's one banana, Michael. What could it cost, ten dollars? It's sort of like going from prime rib to… I don't know… weird brother of prime rib. I hear the jury's still out on science. <strong>Check out banner, Michael!</strong></p>
+        <p class="text-center"><a class="btn btn-primary" href="index.html">Primary button</a></p>
+      </div>
+    </div>
+    <div id="right_arrow" class="col-lg-1" style="background-color:pink;">
+      <img src="images/right.png">
     </div>
   </div>
 </div>
+<!--
+<div id="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="images/left.png">
+      </div>
+      <div class="col-6">
+        <div class="span4">
+          <h2>Our Products</h2>
+          <p>Oh…yeah…the guy in the…the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Speaking of settling, how's Ann? He's a regular Freddie Wilson, that one.</p>
+          <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+        </div>
 
+        <div class="span4">
+          <h2>We Love You! <small>so much</small></h2>
+          <p>I mean, it's one banana, Michael. What could it cost, ten dollars? It's sort of like going from prime rib to… I don't know… weird brother of prime rib. I hear the jury's still out on science. <strong>Check out banner, Michael!</strong></p>
+          <p class="text-center"><a class="btn btn-primary" href="index.html">Primary button</a></p>
+        </div>
+
+        <div class="span4">
+          <h2>Headline Here</h2>
+          <p>Obviously this blue part here is the land. Let the great experiment begin! But I'm the oldest. The matriarch if you will. She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. Maybe we should call her?</p>
+          <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/right.png">
+      </div>
+    </div>
+  </div>
+</div>
+-->
 </body>
 </html>
