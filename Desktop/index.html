@@ -1,106 +1,88 @@
-<html>
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Custom css -->
-  <link rel="stylesheet" type="text/css" href="css/general.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-</head>
-<body>
+  <style>
+    @media screen and (max-width : 480px){
 
-<nav class="navbar navbar-default">
+    }
+    @media screen and (max-width : 320px){
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        height:100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size:70px;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+  </style>
+  </head>
+  <body>
+
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">LOGISTIC MIND</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">ABOUT ME</a></li>
-      <li><a href="#">WORK</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </div>
-</nav>
-<div class="container">
-  <div class="row">
-    <div id="left_arrow" class="col-lg-1" style="background-color:yellow;">
-      <img src="images/left.png">
-    </div>
-    <div class="col-lg-10" style="background-color:blue;">
-      <div class="span4">
-        <h2>Our Products</h2>
-        <p>Oh…yeah…the guy in the…the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Speaking of settling, how's Ann? He's a regular Freddie Wilson, that one.</p>
-        <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
-      </div>
+    <div class="row" style="height:12vh;">
+      <div class="col" style="background:red;">
 
-      <div class="span4">
-        <h2>We Love You! <small>so much</small></h2>
-        <p>I mean, it's one banana, Michael. What could it cost, ten dollars? It's sort of like going from prime rib to… I don't know… weird brother of prime rib. I hear the jury's still out on science. <strong>Check out banner, Michael!</strong></p>
-        <p class="text-center"><a class="btn btn-primary" href="index.html">Primary button</a></p>
-      </div>
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
 
-      <div class="span4">
-        <h2>Headline Here</h2>
-        <p>Obviously this blue part here is the land. Let the great experiment begin! But I'm the oldest. The matriarch if you will. She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. Maybe we should call her?</p>
-        <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
-      </div>
-      <div class="span4">
-        <h2>Our Products</h2>
-        <p>Oh…yeah…the guy in the…the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Speaking of settling, how's Ann? He's a regular Freddie Wilson, that one.</p>
-        <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
-      </div>
-
-      <div class="span4">
-        <h2>We Love You! <small>so much</small></h2>
-        <p>I mean, it's one banana, Michael. What could it cost, ten dollars? It's sort of like going from prime rib to… I don't know… weird brother of prime rib. I hear the jury's still out on science. <strong>Check out banner, Michael!</strong></p>
-        <p class="text-center"><a class="btn btn-primary" href="index.html">Primary button</a></p>
       </div>
     </div>
-    <div id="right_arrow" class="col-lg-1" style="background-color:pink;">
-      <img src="images/right.png">
-    </div>
-  </div>
-</div>
-<!--
-<div id="main-content">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <img src="images/left.png">
-      </div>
-      <div class="col-6">
-        <div class="span4">
-          <h2>Our Products</h2>
-          <p>Oh…yeah…the guy in the…the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Speaking of settling, how's Ann? He's a regular Freddie Wilson, that one.</p>
-          <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
-        </div>
 
-        <div class="span4">
-          <h2>We Love You! <small>so much</small></h2>
-          <p>I mean, it's one banana, Michael. What could it cost, ten dollars? It's sort of like going from prime rib to… I don't know… weird brother of prime rib. I hear the jury's still out on science. <strong>Check out banner, Michael!</strong></p>
-          <p class="text-center"><a class="btn btn-primary" href="index.html">Primary button</a></p>
-        </div>
+    <div class="row" style="height:88vh;">
+      <div class="col-1" style="background:blue; display:flex;"><image src="left.png" style = "display: block; margin: auto;"></div>
 
-        <div class="span4">
-          <h2>Headline Here</h2>
-          <p>Obviously this blue part here is the land. Let the great experiment begin! But I'm the oldest. The matriarch if you will. She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. Maybe we should call her?</p>
-          <p class="text-center"><a class="btn" href="index.html">Read more</a></p>
+      <div id = "mainPanel" class="col" style="background:green;">
+        <div id="faceImage" style = "position:absolute;background: grey;width: fit-content;bottom:0;left: 50%;margin-left:-390px;">
+          <image src="face.png" style = "width:600px;">
         </div>
       </div>
-      <div class="col">
-        <img src="images/right.png">
-      </div>
+
+      <div class="col-1" style="background:yellow; display:flex;"><image src="right.png" style = "display: block; margin: auto;"></div>
     </div>
   </div>
-</div>
--->
-</body>
+
+<script>
+
+var testHeight = $("#mainPanel").height();
+$( "#faceImage" ).css({
+    margin-top: -testHeight;
+});
+
+</script>
+
+  </body>
+
+
 </html>

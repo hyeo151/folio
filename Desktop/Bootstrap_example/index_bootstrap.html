@@ -3,24 +3,86 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <style>
+    @media screen and (max-width : 480px){
+
+    }
+    @media screen and (max-width : 320px){
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        height:100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size:70px;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+  </style>
   </head>
   <body>
 
   <div class="container-fluid">
-    <div class="row">
-      <div class="col" style="background:red;">Nav</div>
+    <div class="row" style="height:12vh;">
+      <div class="col" style="background:red;">
+
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+
+      </div>
     </div>
 
-    <div class="row">
-      <div class="col-1" style="background:blue;">L</div>
-      <div class="col" style="background:green;"><image src="face.png" style = "display: block; margin: auto;"></div>
-      <div class="col-1" style="background:yellow;">R</div>
+    <div class="row" style="height:88vh;">
+      <div class="col-1" style="background:blue; display:flex;"><image src="left.png" style = "display: block; margin: auto;"></div>
+
+      <div id = "mainPanel" class="col" style="background:green;">
+        <div id="faceImage" style = "position:absolute;background: grey;width: fit-content;bottom:0;left: 50%;margin-left:-390px;">
+          <image src="face.png" style = "width:780px;">
+        </div>
+      </div>
+
+      <div class="col-1" style="background:yellow; display:flex;"><image src="right.png" style = "display: block; margin: auto;"></div>
     </div>
   </div>
 
+<script>
+
+var testHeight = $("#mainPanel").height();
+$( "#faceImage" ).css({
+    margin-top: -testHeight;
+});
+
+</script>
+
   </body>
+
+
 </html>
