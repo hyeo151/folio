@@ -56,3 +56,21 @@ body{
     }
 
 }
+
+/*Desktop*/
+
+@media only screen and (min-width: 1500px) {
+
+  body{
+    overflow-y:hidden;
+  }
+  #faceImage{
+    display:inline-block;
+    background:BlueViolet;
+    background-image: url("face.png");
+    background-repeat: no-repeat;
+    background-position: 53% 100%;
+    width: -webkit-fill-available;
+    height: 100%;
+  }
+}

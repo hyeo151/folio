@@ -1,0 +1,8 @@
+<nav>
+  <ul>
+    <li><a class="active" href="#HOME">HOME</a></li><!--
+    --><li><a href="#ABOUT ME">ABOUT ME</a></li><!--
+    --><li><a href="#WORK">WORK</a></li><!--
+    --><li><a href="#CONTACT">CONTACT</a></li>
+  </ul>
+</nav>
