@@ -1,0 +1,23 @@
+@media (min-width:1025px){
+  body{
+    overflow-y:hidden;
+  }
+
+  #container{
+    background:#cddc39;
+    height: calc(100vh - 68px);
+    text-align: center;
+  }
+
+  #faceImage{
+    display:inline-block;
+    background:BlueViolet;
+    background-image: url("../image/face.png");
+    background-repeat: no-repeat;
+    background-position: 53% 100%;
+    background-size: contain;
+    width: -webkit-fill-available;
+    height: 100%;
+  }
+
+}
