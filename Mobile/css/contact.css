@@ -1,20 +1,20 @@
+#container {
+  background-color:#3c8f7d;
+}
 
 #mainPanel{
-  background:red;
   width:1558px;
   margin: 0 auto;
   padding:40px;
 }
 
 #leftPanel{
-  background:grey;
   width:400px;
   display: inline-block;
   margin-right:200px;
 }
 
 #rightPanel{
-  background:orange;
   width:380px;
   display:inline-block;
   margin-left:200px;
