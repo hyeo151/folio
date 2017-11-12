@@ -1,8 +1,9 @@
-function myFunction(x) {
-    document.getElementById("myNav").style.width = "100%";
+function myFunction() {
+    $("#myNav").css("width","100%");
 }
 
 
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  $("#myNav").css("width","0%");
+  $("#myNav").css("width","");
 }

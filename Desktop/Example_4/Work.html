@@ -11,19 +11,25 @@
     <header id="header">
       <div id="navGroup">
         <a id="logo">
-          <img src="Logo.png">
+          <img src="images/Logo.png">
           <div id="logoName">
             <h1>LOGICAL MIND</h1>
           </div>
         </a>
-        <nav>
-          <ul>
-            <li><a class="active" href="#HOME">HOME</a></li><!--
-            --><li><a href="#ABOUT ME">ABOUT ME</a></li><!--
-            --><li><a href="#WORK">WORK</a></li><!--
-            --><li><a href="#CONTACT">CONTACT</a></li>
-          </ul>
-        </nav>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html" class="active">Home</a>
+            <a href="About.html">About</a>
+            <a href="#">Porotofoio</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div id="burger_menu" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </div>
     </header>
 

@@ -4,18 +4,23 @@ body{
 
 
 @media only screen and (min-width: 300px) {
-
+    .arrowNav {
+      display:none;
+    }
     #container {
       width:100%;
       height:100%;
       position: relative;
       background: url("../images/profile.jpg");
       background-position:50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     #face img{
       border-radius: 50%;
-    }
+      width:100px;
+  }
 
     #face{
       position:fixed;
@@ -29,92 +34,31 @@ body{
       width:80%;
       line-height:26px;
       position:relative;
+      text-align: center;
     }
 
     #burger_menu,#intro,#myNav,#face{
       display:block;
     }
 
-    #header{
-      display:none;
-    }
 
-      #burger_menu{
-        bottom:20px;
-        right:30px;
-        position:fixed;
-      }
+}
 
-      #burger_menu {
-          width:55px;
-          height:55px;
-          background:#1FB58F;
-          border-radius: 50%;
-      }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-      #burger_menu div{
-        display:block;
-      }
+  #face{
+    left: 39%;
+  }
 
-      .bar1, .bar2, .bar3{
-        background-color:black;
-        position:relative;
-        width:33px;
-        height:4px;
-        margin: 8px 0 8px 11px;
-        transition: 0.4s;
-      }
+  #face img{
+    width: 165px;
+  }
 
-      .bar1{
-        margin-top:13px;
-      }
-
-      .overlay {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: #1FB58F;
-          overflow-x: hidden;
-          transition: 0.5s;
-      }
-
-      .overlay-content {
-          position: relative;
-          top: 25%;
-          width: 100%;
-          text-align: center;
-          margin-top: 30px;
-      }
-
-      .overlay a {
-          padding: 8px;
-          text-decoration: none;
-          font-size: 36px;
-          color: black;
-          display: block;
-          transition: 0.3s;
-      }
-
-      .overlay a:hover, .overlay a:focus {
-          color: #f1f1f1;
-      }
-
-      .overlay .closebtn {
-          position: absolute;
-          top: 20px;
-          right: 45px;
-          font-size: 60px;
-      }
-      .overlay a {font-size: 20px}
-      .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-      }
-
+  #intro{
+    font-size: 28px;
+    line-height: 45px;
+    top: 37%;
+  }
 }
 
 @media (min-width:1025px){
@@ -128,7 +72,7 @@ body{
 
   #container {
     background: #cddc39;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 120px);
   }
 
   #burger_menu{
@@ -137,33 +81,31 @@ body{
 
   #header{
       display:block;
-      background: blue;
-      height:90px;
+      background:#237e73;
+      height:120px;
   }
 
   #navGroup{
-    background: grey;
-    max-width: 1446px;
+    max-width: 1700px;
     margin: 0 auto;
-    padding: 20px 20px 0px 20px;
+    padding: 34px 20px 0px 20px;
     height:100%;
   }
 
   #logo{
-    background:red;
     display:inline-block;
     vertical-align:middle;
   }
 
   #logo img{
     display:inline-block;
-    background:green;
     vertical-align:middle;
+    margin-top: -10px;
+
   }
 
   #logoName{
     display:inline-block;
-    background:orange;
     vertical-align:middle;
     font-size:20px;
   }
@@ -171,19 +113,27 @@ body{
   #logoName h1{
     margin:0;
     padding:0;
+    font-family: haziness;
+    margin-left: 40px;
+    font-size: 2em;
+    letter-spacing: 9px;
+
+  }
+
+  #logo:hover {
+    color:white;
+    cursor:pointer;
   }
 
   #myNav{
-    height: initial;
-    position: initial;
-    z-index: initial;
-    top: initial;
-    left: initial;
-    background: initial;
-    overflow: initial;
-    transition: initial;
-
-    background:green;
+    height: unset;
+    position: unset;
+    z-index: unset;
+    top: unset;
+    left: unset;
+    background: unset;
+    overflow: unset;
+    transition: unset;
     width: auto;
     display:inline-block;
     float:right;
@@ -199,21 +149,73 @@ body{
   #myNav div{
     display:block;
     width:fit-content;
-    background:red;
     position: initial;
     top: initial;
     text-align: initial;
     margin-top: initial;
-
+    margin-top: 5px;
   }
   #myNav div a{
     display:inline-block;
-    background:green;
-    font-size: 30px;
+    font-size: 24px;
     padding: initial;
     text-decoration: initial;
-    color: initial;
     display: initial;
     transition: initial;
+    margin-right: 35px;
+  }
+
+  #rightArrow {
+      display: inline-block;
+      vertical-align: middle;
+      right: 0;
+  }
+
+  #leftArrow {
+      display: inline-block;
+      vertical-align: middle;
+      left: 0;
+  }
+
+
+
+  .arrowNav {
+      width: 130px;
+      height: 200px;
+      top: 40vh;
+      position: fixed;
+      text-align: center;
+  }
+
+  .arrowNav:hover{
+    cursor:pointer;
+  }
+
+  .arrowNav:hover img{
+    width:60px;
+  }
+
+  .arrowNav a img{
+    margin-top:63px;
+    width:50px;
+    -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s;
+
+  }
+
+  #face {
+      position: initial;
+      left:initial;
+      top:initial;
+      background: #3c8f7d;
+      height: 100%;
+      display: inline-block;
+      background-image: url(../images/face_2.png);
+      background-repeat: no-repeat;
+      background-position: 53% 100%;
+      background-size: contain;
+      width: -webkit-fill-available;
+      height: 100%;
+
   }
 }

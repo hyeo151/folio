@@ -1,0 +1,36 @@
+
+#mainPanel{
+  background:red;
+  width:1558px;
+  margin: 0 auto;
+  padding:40px;
+}
+
+#leftPanel{
+  background:grey;
+  width:400px;
+  display: inline-block;
+  margin-right:200px;
+}
+
+#rightPanel{
+  background:orange;
+  width:380px;
+  display:inline-block;
+  margin-left:200px;
+  Vertical-align: top;
+  margin-top: 34px;
+}
+
+#rightPanel label{
+  display:block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#rightPanel input{
+    width: 370px;
+    height: 33px;
+    border-radius: 6px;
+
+}
