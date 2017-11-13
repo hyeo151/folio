@@ -1,5 +1,6 @@
 #container {
   background-color:#3c8f7d;
+  height: calc(100vh - 120px);
 }
 
 #mainPanel{

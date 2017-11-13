@@ -1,34 +1,43 @@
-#mainPanel{
-    width: 1630px;
-    margin: 0 auto;
-}
-#container {
-  background-color:#3c8f7d;
+@media only screen and (min-width: 300px) {
+  #burger_menu,#myNav{
+    display:block;
+  }
 }
 
-.Des_block{
-  display:inline-block;
-  width: 440px;
-  padding:10px;
-  margin:20px 20px 20px 20px;
-}
+@media (min-width:1025px){
+  #mainPanel{
+      width: 1630px;
+      margin: 0 auto;
+  }
+  #container {
+    background: #3c8f7d;
+    height: calc(100vh - 120px);
+  }
 
-.Des_block span{
-  display:block;
-}
+  .Des_block{
+    display:inline-block;
+    width: 440px;
+    padding:10px;
+    margin:20px 20px 20px 20px;
+  }
 
-#bottomPanel span{
-  display:block;
-  text-align:left;
-  padding-left:130px;
-  font-size:40px
-}
+  .Des_block span{
+    display:block;
+  }
 
-#imageList{
-}
+  #bottomPanel span{
+    display:block;
+    text-align:left;
+    padding-left:130px;
+    font-size:40px
+  }
 
-#imageList img{
-  display:inline-block;
-  padding:10px;
-  margin:0;
+  #imageList{
+  }
+
+  #imageList img{
+    display:inline-block;
+    padding:10px;
+    margin:0;
+  }
 }
