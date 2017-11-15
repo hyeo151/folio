@@ -2,9 +2,42 @@
   #burger_menu,#myNav{
     display:block;
   }
+
+  #mainPanel{
+  }
+  #burger_menu{
+    z-index: 1;
+  }
+  #container{
+    overflow: auto;
+    background-position: 50% 48%;
+  }
+
+  .Des_block{
+    background:rgba(100, 0, 255, 0.24);
+    width: 300px;
+    padding: 28px;
+    margin: 30px auto;
+    text-align: center;
+
+  }
+
+  #imageList img{
+    width: 94px;
+    margin: 20px;
+  }
+
+  #imageList{
+    margin-bottom: 100px;
+    text-align: center;
+  }
 }
 
 @media (min-width:1025px){
+  .Des_block{
+    background:unset;
+  }
+
   #mainPanel{
       width: 1630px;
       margin: 0 auto;
@@ -33,11 +66,16 @@
   }
 
   #imageList{
+    text-align:unset;
   }
 
   #imageList img{
     display:inline-block;
     padding:10px;
     margin:0;
+    width: 129px;
+  }
+  #burger_menu{
+    display:none;
   }
 }
