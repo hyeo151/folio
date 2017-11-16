@@ -35,7 +35,22 @@ body{
 
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width: 600px) {
+  #intro{
+    font-size: 27px;
+    line-height: 38px;
+  }
+
+  #face {
+    top: 14%;
+  }
+
+  #face img{
+    width: 130px;
+  }
+}
+
+@media only screen and (min-device-width : 800px){
 
   #face{
     left: 39%;
@@ -48,7 +63,7 @@ body{
   #intro{
     font-size: 28px;
     line-height: 45px;
-    top: 37%;
+    top: 43%;
   }
 }
 
@@ -59,7 +74,7 @@ body{
 
   #burger_menu{
     display:none;
-  }  
+  }
 
   #intro{
     display:none;
@@ -68,6 +83,7 @@ body{
   #container {
     background: #cddc39;
     height: calc(100vh - 120px);
+    overflow:hidden;
   }
 
   #face {

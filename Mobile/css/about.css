@@ -14,12 +14,22 @@
   }
 
   .Des_block{
-    background:rgba(100, 0, 255, 0.24);
-    width: 300px;
+    background: rgba(168, 245, 255, 0.48);
     padding: 28px;
     margin: 30px auto;
-    text-align: center;
+    border: 6px solid black;
+    border-radius: 45px;
+    font-size: 16px;
+    text-align: justify;
+    width: 224px;
 
+  }
+
+  .Des_block span{
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 16px;
   }
 
   #imageList img{
@@ -31,6 +41,62 @@
     margin-bottom: 100px;
     text-align: center;
   }
+
+  #bottomPanel span{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 22px;
+
+  }
+
+}
+
+@media only screen and (min-width: 360px) {
+  .Des_block {
+    font-size: 16px;
+    text-align: justify;
+    width: 265px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Des_block {
+    width: 395px;
+    padding: 44px;
+    line-height: 23px;
+  }
+  #bottomPanel{
+    padding-left: 42px;
+    padding-right: 51px;
+  }
+
+  #bottomPanel span{
+    display: block;
+    padding-bottom: 21px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  #bottomPanel{
+    padding-left: 104px;
+    padding-right: 126px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .Des_block {
+    width: 465px;
+    padding: 44px;
+  }
+  #bottomPanel{
+    padding-left: 112px;
+    padding-right: 152px;
+  }
+
+  #bottomPanel span{
+    display: block;
+    padding-bottom: 21px;
+  }
 }
 
 @media (min-width:1025px){
@@ -39,7 +105,7 @@
   }
 
   #mainPanel{
-      width: 1630px;
+      width: 798px;
       margin: 0 auto;
   }
   #container {
@@ -49,13 +115,18 @@
 
   .Des_block{
     display:inline-block;
-    width: 440px;
+    width: 693px;
     padding:10px;
-    margin:20px 20px 20px 20px;
+    margin: 20px 20px 20px 56px;
+    border: unset;
   }
 
   .Des_block span{
     display:block;
+  }
+
+  #bottomPanel{
+    padding-left: 172px;
   }
 
   #bottomPanel span{
@@ -78,4 +149,26 @@
   #burger_menu{
     display:none;
   }
+}
+
+@media (min-width:1280px){
+  #mainPanel {
+    width: 1041px;
+    margin: 0 auto;
+  }
+
+  .Des_block{
+    width: 422px;
+    border: unset;
+  }
+
+  .Des_block:nth-child(3){
+    width: 956px;
+  }
+
+  #bottomPanel{
+    padding-left: 50px;
+    padding-right: unset;
+  }
+
 }
