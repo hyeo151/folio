@@ -1,3 +1,4 @@
+
 @media only screen and (min-width: 300px) {
   #burger_menu,#myNav{
     display:block;
@@ -14,11 +15,8 @@
   }
 
   .Des_block{
-    background: rgba(168, 245, 255, 0.48);
     padding: 28px;
     margin: 30px auto;
-    border: 6px solid black;
-    border-radius: 45px;
     font-size: 16px;
     text-align: justify;
     width: 224px;
@@ -30,11 +28,11 @@
     display: block;
     font-weight: bold;
     margin-bottom: 16px;
+    text-align: center;
   }
 
   #imageList img{
-    width: 94px;
-    margin: 20px;
+        width: 56px;
   }
 
   #imageList{
@@ -46,7 +44,21 @@
     font-size: 25px;
     font-weight: bold;
     padding-left: 22px;
+  }
 
+  #ButtonSwitch{
+    width: 146px;
+  }
+
+  #firstItem{
+    display:inline-block;
+    background-color:yellow;
+    vertical-align: middle;
+  }
+
+  #secondItem{
+    display:inline-block;
+    vertical-align: middle;
   }
 
 }
@@ -107,10 +119,13 @@
   #mainPanel{
       width: 798px;
       margin: 0 auto;
+      background:#f6f6f6;
+      height:100%;
   }
   #container {
-    background: #3c8f7d;
     height: calc(100vh - 120px);
+      background-image:url("../images/647_3.jpg");
+ background-size: 923px;
   }
 
   .Des_block{

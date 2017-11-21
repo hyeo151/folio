@@ -37,32 +37,28 @@
       <a id="leftArrow" class="arrowNav" href = "index.html"><img src="images/left.png"></a>
       <div id = "mainPanel">
         <div class = "Des_block">
-              <span>Who Am I?</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
-        </div>
-        <div class = "Des_block">
-          <span>What Can I Do?</span>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
-        </div>
-        <div class = "Des_block">
-          <span>Who Do I Love</span>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+              <span>Full-Stack Developer in NZ</span>
+                <p>I enjoy building great websites and web applications and working with small teams to come up with a solid concept-to-launch plan that fits their budget and timeline.
+                In my spare time, the web development is a big part of my life. Whether it be researching on new business idea to translate it into possible online web businesss or
+                exploring new technologies that could be utilized and tooled in my skillsets. I am extremely passionate about web development and design in all it’s forms and helping
+                small businesses and artisans build and improve their online presence.</p>
         </div>
         <div id = "bottomPanel">
-          <span>Technologies</span>
+          <span>Front-End</span>
+          <span>BackEnd</span>
           <div id="imageList">
-            <img src="images/js.jpg">
-            <img src="images/html.jpg">
-            <img src="images/css.jpg">
+            <div id="ButtonSwitch">
+              <div id="firstItem">
+                <img src="images/css.png">
+              </div>
+              <div id="secondItem">
+                <img src="images/sass.png">
+              </div>
+            </div>
+            <!--<img src="images/css.jpg">
             <img src="images/php.png">
             <img src="images/react.png"/>
-            <img src="images/mysql.png" width="330px"/>
+            <img src="images/mysql.png" width="330px"/>-->
           </div>
         </div>
       </div>
@@ -73,7 +69,17 @@
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"></script>
     <script src="js/animation.js"></script>
+    <script>
+      $( "#firstItem" ).click(function() {
 
+        $('#firstItem').css("background-color", "yellow");
+        $('#secondItem').css("background-color", "unset");
+      });
+      $( "#secondItem" ).click(function() {
+        $('#secondItem').css("background-color", "yellow");
+        $('#firstItem').css("background-color", "unset");
+      });
+    </script>
   </body>
 
 </html>

@@ -1,4 +1,4 @@
-html, body { height: 100%; }
+html, body {}
 
 * {
         margin: 0;
@@ -12,7 +12,7 @@ html, body { height: 100%; }
 
 body{
   margin:0;
-  background-color:#3c8f7d;
+
 }
 
 @font-face {
@@ -132,7 +132,7 @@ a{
 @media (min-width:1025px){
 
   #container {
-    background: #cddc39;
+    background: white;
     height: 100%;
   }
 
@@ -142,8 +142,9 @@ a{
 
   #header{
       display:block;
-      background:#237e73;
+      background:#52AD9C;
       height:120px;
+
   }
 
   #navGroup{
@@ -156,6 +157,7 @@ a{
   #logo{
     display:inline-block;
     vertical-align:middle;
+    margin-left:249px;
   }
 
   #logo img{
@@ -229,13 +231,13 @@ a{
   #rightArrow {
       display: inline-block;
       vertical-align: middle;
-      right: 0;
+      right: 312PX;
   }
 
   #leftArrow {
       display: inline-block;
       vertical-align: middle;
-      left: 0;
+      left: 300PX;
   }
 
 
@@ -243,7 +245,7 @@ a{
   .arrowNav {
       width: 130px;
       height: 200px;
-      top: 40vh;
+      top: 46vh;
       position: fixed;
       text-align: center;
   }
