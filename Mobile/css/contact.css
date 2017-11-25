@@ -1,3 +1,6 @@
+html, body{
+  height: 100%;
+}
 @media only screen and (min-width: 300px) {
   #mainPanel{
   }
@@ -9,7 +12,8 @@
     z-index: 1;
   }
   #leftPanel{
-    padding: 50px;
+        padding: 50px 50px 0px 50px;
+        text-align: justify;
   }
 
   #leftPanel h1{
@@ -37,6 +41,31 @@
 
 }
 
+@media only screen and (min-width: 600px) {
+  #leftPanel{
+    line-height: 29px;
+    font-size: 24px;
+  }
+
+  #leftPanel h1 {
+    font-size: 35px;
+  }
+
+  #leftPanel div{
+    padding-top: 36px;
+    line-height: 45px;
+  }
+
+  #rightPanel label {
+      font-size: 28px;
+  }
+
+  #rightPanel {
+    margin-bottom: 55px;
+  }
+
+}
+
 @media (min-width:1025px){
   #container {
     background-image:url("../images/647_3.jpg");
@@ -46,23 +75,21 @@
   }
 
   #mainPanel{
-    width:fit-content;
     margin: 0 auto;
-    padding:40px;
     background:#f6f6f6;
     height:100%;
   }
 
   #leftPanel{
-    width:400px;
     display: inline-block;
   }
 
   #rightPanel{
-    width:380px;
+        width: 59%;
     display:inline-block;
     Vertical-align: top;
     margin-top: 34px;
+      margin-left: 125px;
   }
 
   #leftPanel h1{
@@ -82,9 +109,23 @@
   }
 
   #rightPanel input{
-      width: 370px;
       height: 33px;
       border-radius: 6px;
 
+  }
+
+}
+
+@media (min-width:1440px){
+  #leftPanel{
+    padding-top: 28px;
+  }
+
+  #leftPanel > div{
+    padding-top: unset;
+  }
+
+  #rightPanel {
+    margin-top:unset;
   }
 }

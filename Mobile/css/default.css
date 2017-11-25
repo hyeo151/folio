@@ -129,6 +129,37 @@ a{
       }
 }
 
+@media only screen and (min-width: 600px) {
+  #burger_menu {
+      width: 85px;
+      height: 85px;
+      background: #1FB58F;
+      border-radius: 50%;
+  }
+
+  .bar1, .bar2, .bar3 {
+      background-color: black;
+      position: relative;
+      width: 57px;
+      height: 4.5px;
+      margin: 4px 0 11px 14px;
+      transition: 0.4s;
+  }
+
+  .bar1 {
+    margin-top: 23px;
+  }
+
+  .overlay a {
+      font-size: 49px;
+  }
+
+  .overlay .closebtn {
+    font-size: 57px;
+  }
+
+}
+
 @media (min-width:1025px){
 
   #container {
@@ -147,6 +178,10 @@ a{
 
   }
 
+  #mainPanel{
+    width: 798px;
+  }
+
   #navGroup{
     max-width: 1700px;
     margin: 0 auto;
@@ -157,7 +192,7 @@ a{
   #logo{
     display:inline-block;
     vertical-align:middle;
-    margin-left:249px;
+    margin-left:17px;
   }
 
   #logo img{
@@ -231,13 +266,13 @@ a{
   #rightArrow {
       display: inline-block;
       vertical-align: middle;
-      right: 312PX;
+      right: 0PX;
   }
 
   #leftArrow {
       display: inline-block;
       vertical-align: middle;
-      left: 300PX;
+      left: 0PX;
   }
 
 
@@ -266,4 +301,10 @@ a{
 
   }
 
+}
+
+@media (min-width:1280px){
+  #mainPanel {
+    width: 1041px;
+  }
 }

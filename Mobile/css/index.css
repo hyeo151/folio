@@ -1,6 +1,8 @@
-body{
+html, body{
   margin:0;
+  height:100%;
 }
+
 
 #load{
     width:100%;
@@ -56,6 +58,8 @@ body{
   #face img{
     width: 130px;
   }
+
+
 }
 
 @media only screen and (min-device-width : 800px){
@@ -89,24 +93,24 @@ body{
   }
 
   #container {
-    background: #cddc39;
     height: calc(100vh - 120px);
     overflow:hidden;
+    background-image:url("../images/647_3.jpg");
+    background-size: 923px;
   }
 
   #face {
       position: initial;
       left:initial;
       top:initial;
-      background: #3c8f7d;
       height: 100%;
       display: inline-block;
-      background-image: url(../images/face_2.png);
+      background-image: url(../images/face_9.png);
       background-repeat: no-repeat;
       background-position: 53% 100%;
       background-size: contain;
       width: -webkit-fill-available;
       height: 100%;
-
   }
+
 }

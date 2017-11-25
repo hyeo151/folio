@@ -25,7 +25,6 @@
   #mainPanel{
     margin-bottom: 100px;
     text-align: -webkit-center;
-    width: 1041px;
     margin: auto;
   }
   #burger_menu{
@@ -61,7 +60,7 @@
 
    .workList{
      display:inline-block;
-     width: 454px;
+     width: 344px;
      padding: 40px;
    }
    #mainPanel{
@@ -70,3 +69,9 @@
      height: calc(100vh - 120px);
    }
  }
+
+@media (min-width:1440px){
+	.arrowNav img {
+ 		right: 133PX;
+	}
+}

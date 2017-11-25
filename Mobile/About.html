@@ -44,23 +44,57 @@
                 small businesses and artisans build and improve their online presence.</p>
         </div>
         <div id = "bottomPanel">
-          <span>Front-End</span>
-          <span>BackEnd</span>
-          <div id="imageList">
-            <div id="ButtonSwitch">
-              <div id="firstItem">
+
+          <div id= "frontEnd" class="imageList">
+            <span>Front-End</span>
+            <div class="ButtonSwitch">
+              <div class="firstItem selected">
+                <img src="images/html.png">
+              </div>
+
+            </div>
+            <div class="ButtonSwitch">
+              <div class="firstItem selected">
                 <img src="images/css.png">
               </div>
-              <div id="secondItem">
+              <div class="secondItem">
                 <img src="images/sass.png">
               </div>
             </div>
-            <!--<img src="images/css.jpg">
-            <img src="images/php.png">
-            <img src="images/react.png"/>
-            <img src="images/mysql.png" width="330px"/>-->
+            <div class="ButtonSwitch">
+              <div class="firstItem selected">
+                <img src="images/es6.jpg">
+              </div>
+              <div class="secondItem">
+                <img src="images/jquery.png">
+              </div>
+            </div>
+            <div class="ButtonSwitch">
+              <div class="firstItem selected">
+                <img src="images/react.png">
+              </div>
+            </div>
           </div>
+
+          <div id= "backEnd" class="imageList">
+            <span>BackEnd</span>
+            <div class="ButtonSwitch">
+              <div class="firstItem selected">
+                <img src="images/php.png">
+              </div>
+            </div>
+            <div class="ButtonSwitch">
+              <div class="firstItem selected">
+                <img src="images/mysql.png">
+              </div>
+            </div>
+
+          </div>
+
         </div>
+
+
+
       </div>
       <a id="rightArrow" class="arrowNav" href = "work.html"><img src="images/right.png"></a>
     </div>
@@ -70,15 +104,31 @@
       crossorigin="anonymous"></script>
     <script src="js/animation.js"></script>
     <script>
-      $( "#firstItem" ).click(function() {
+      /*$( ".firstItem" ).click(function() {
 
-        $('#firstItem').css("background-color", "yellow");
-        $('#secondItem').css("background-color", "unset");
+        $('.firstItem').css("background-color", "yellow");
+        $('.secondItem').css("background-color", "unset");
       });
-      $( "#secondItem" ).click(function() {
-        $('#secondItem').css("background-color", "yellow");
-        $('#firstItem').css("background-color", "unset");
+      $( ".secondItem" ).click(function() {
+        $('.secondItem').css("background-color", "yellow");
+        $('.firstItem').css("background-color", "unset");
+      });*/
+
+      $(".firstItem").on( "click", function() {
+        if(!$(this).hasClass( "selected")){
+          $(this)
+          .addClass("selected")
+          .next().removeClass("selected");
+        }
       });
+      $(".secondItem").on( "click", function() {
+        if(!$(this).hasClass( "selected")){
+          $(this)
+          .addClass("selected")
+          .prev().removeClass("selected");
+        }
+      });
+
     </script>
   </body>
 

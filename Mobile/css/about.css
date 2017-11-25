@@ -1,3 +1,7 @@
+html, body{
+  height:100%;
+}
+
 
 @media only screen and (min-width: 300px) {
   #burger_menu,#myNav{
@@ -31,34 +35,70 @@
     text-align: center;
   }
 
-  #imageList img{
+  .imageList img{
         width: 56px;
   }
 
-  #imageList{
-    margin-bottom: 100px;
+  .imageList{
     text-align: center;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #bottomPanel{
+    margin-left: 34px;
+    margin-bottom: 93px;
   }
 
   #bottomPanel span{
+    display:block;
+    padding-bottom: 21px;
     font-size: 25px;
     font-weight: bold;
-    padding-left: 22px;
   }
 
-  #ButtonSwitch{
+  .ButtonSwitch{
     width: 146px;
+    margin-bottom: 11px;
   }
 
-  #firstItem{
+  .firstItem{
     display:inline-block;
-    background-color:yellow;
     vertical-align: middle;
+    padding:3px;
   }
 
-  #secondItem{
+  .secondItem{
     display:inline-block;
     vertical-align: middle;
+    padding:5px;
+  }
+
+  .selected{
+    background-color:#cee0f4;
+    border-radius:5px;
+  }
+
+  #frontEnd div.ButtonSwitch:nth-of-type(1) img {
+    width: 129px;
+  }
+
+  #frontEnd div.ButtonSwitch:nth-of-type(4) img {
+    width: 128px;
+  }
+
+  #frontEnd div.ButtonSwitch:nth-of-type(3) div.secondItem img{
+    width: 68px;
+    height: 25px;
+  }
+
+  #backEnd span{
+    margin-left: 15px;
+  }
+
+  #backEnd div.ButtonSwitch:nth-of-type(1) img, #backEnd div.ButtonSwitch:nth-of-type(2) img {
+    width: 94px;
   }
 
 }
@@ -77,6 +117,10 @@
     padding: 44px;
     line-height: 23px;
   }
+
+  .Des_block p{
+    font-size: 20px;
+  }
   #bottomPanel{
     padding-left: 42px;
     padding-right: 51px;
@@ -85,6 +129,33 @@
   #bottomPanel span{
     display: block;
     padding-bottom: 21px;
+  }
+  .ButtonSwitch{
+    width: 240px;
+  }
+
+  #frontEnd div.ButtonSwitch:nth-of-type(1) img {
+      width: 187px;
+  }
+
+  #frontEnd div.ButtonSwitch:nth-of-type(2) div img {
+      width: 86px;
+  }
+
+  #frontEnd div.ButtonSwitch:nth-of-type(3) div img, #frontEnd div.ButtonSwitch:nth-of-type(3) div.secondItem img {
+      width: 87px;
+  }
+
+  #frontEnd div.ButtonSwitch:nth-of-type(4) img {
+          width: 188px;
+  }
+
+  #backEnd div.ButtonSwitch:nth-of-type(1) img, #backEnd div.ButtonSwitch:nth-of-type(2) img {
+      width: 106px;
+  }
+
+  #backEnd span {
+      margin-left: 32px;
   }
 }
 
@@ -117,7 +188,6 @@
   }
 
   #mainPanel{
-      width: 798px;
       margin: 0 auto;
       background:#f6f6f6;
       height:100%;
@@ -151,11 +221,11 @@
     font-size:40px
   }
 
-  #imageList{
+  .imageList{
     text-align:unset;
   }
 
-  #imageList img{
+  .imageList img{
     display:inline-block;
     padding:10px;
     margin:0;
@@ -164,17 +234,34 @@
   #burger_menu{
     display:none;
   }
+
+  #frontEnd{
+
+  }
+}
+
+@media (min-width:1024px){
+  .imageList{
+    text-align:unset;
+  }
+
+  #frontEnd{
+    margin-left: 126px;
+  }
+  #bottomPanel span {
+    margin-left: unset;
+  }
 }
 
 @media (min-width:1280px){
   #mainPanel {
-    width: 1041px;
     margin: 0 auto;
   }
 
   .Des_block{
     width: 422px;
     border: unset;
+    width: unset;
   }
 
   .Des_block:nth-child(3){
@@ -184,6 +271,32 @@
   #bottomPanel{
     padding-left: 50px;
     padding-right: unset;
+  }
+
+  #bottomPanel span {
+    padding-left: unset;
+    margin-left:unset;
+  }
+  #frontEnd{
+    margin-left: 161px;
+  }
+}
+
+@media (min-width:1440px){
+  .Des_block{
+    width: unset;
+  }
+  #mainPanel{
+    overflow: hidden;
+  }
+
+  #bottomPanel span {
+    padding-left: unset;
+    margin-left:unset;
+  }
+
+  #frontEnd{
+    margin-left: 161px;
   }
 
 }
